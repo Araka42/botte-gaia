@@ -1,0 +1,2 @@
+class PlatsController < ApplicationController
+end
