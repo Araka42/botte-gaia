@@ -15,8 +15,8 @@ Category.destroy_all
 pates = Category.create!({name:"pates"})
 pates.save!
 
-gnudi = Plat.create!({name: "Gnudi", description: "Pates au beurre de sauge, sauce tomate", price: 13 })
+gnudi = Plat.create!({name: "Gnudi", description: "Pates au beurre de sauge, sauce tomate", price: 13, category: pates })
 gnudi.save!
 
-polpette = Plat.create!({name: "Polpette", description: "Boulettes de veau, ricotta, sauge", price: 16 })
+polpette = Plat.create!({name: "Polpette", description: "Boulettes de veau, ricotta, sauge", price: 16, category: pates })
 polpette.save!
